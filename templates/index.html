@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ustvari dokument z EAN kodo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Ustvari dokument z EAN kodo</h1>
+        <div class="form-container">
+            <div class="input-section">
+                <div class="input-box">
+                    <label for="ean-kode">Vnesi EAN Kode</label>
+                    <textarea id="ean-kode" rows="10"></textarea>
+                </div>
+                <div class="input-box">
+                    <label for="opis-artikla">Opis artikla</label>
+                    <textarea id="opis-artikla" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="preview-section">
+                <label for="pdf-preview">PDF predogled</label>
+                <div id="pdf-preview">
+                    <iframe id="pdf-frame" style="width:100%; height:400px;" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="preview-btn">PREVIEW</button>
+            <button id="download-btn">DOWNLOAD</button>
+        </div>
+        <div id="message-box"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
