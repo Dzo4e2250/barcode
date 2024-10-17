@@ -36,26 +36,26 @@ EAN Barcode Generator je namenjen uporabnikom, ki redno delajo s tabelami EAN ko
 3. Zaženi Docker kontejner:
    ```bash
    docker run -d -p 5000:5000 ean-barcode-app
-4. Odpri aplikacijo v brskalniku: Ko je kontejner zažene, lahko dostopaš do aplikacije na naslovu:
+4. Odpri aplikacijo v brskalniku: Ko se kontejner zažene, lahko dostopaš do aplikacije na naslovu:
    ```bash
    http://localhost:5000
 
-##Uporaba aplikacije:
+## Uporaba aplikacije:
 
-- Vnesite ali prilepite EAN kode v obrazec na spletni strani.
-- Kliknite na gumb Generiraj PDF z barkodami.
-- Aplikacija bo generirala PDF dokument, ki ga lahko prenesete in uporabite.
+- Vnesi ali prilepite EAN kode v obrazec na spletni strani.
+- Klikni na gumb Generiraj PDF z barkodami.
+- Aplikacija bo generirala PDF dokument, ki ga lahko preneseš in uporablaš.
 
-###Struktura datotek
+### Struktura datotek
 
 - **app.py**: Glavna Python aplikacija, ki uporablja Flask za spletno streženje in ReportLab za generiranje PDF dokumentov.
 - **templates/index.html**: Spletna stran za vnos EAN kod.
 - **Dockerfile**: Konfiguracijska datoteka za ustvarjanje Docker slike.
 - **requirements.txt**: Seznam Python knjižnic, ki jih aplikacija potrebuje za delovanje.
 
-##Tehnične zahteve
+## Tehnične zahteve
 
-Aplikacija uporablja naslednje knjižnice:
+# Aplikacija uporablja naslednje knjižnice:
 
 - **Flask**: Za izdelavo spletnega vmesnika.
 - **ReportLab**: Za generiranje PDF dokumentov.
@@ -63,7 +63,7 @@ Aplikacija uporablja naslednje knjižnice:
 
 Vse potrebne knjižnice so navedene v datoteki **requirements.txt** in se avtomatično namestijo, ko Docker slika gradi aplikacijo.
 
-5. Pogosta vprašanja
+5. ## Pogosta vprašanja
 
 Zakaj se aplikacija ne zažene?
 Preverite, ali imate pravilno nameščen Docker in če sledite korakom za zagon slike in kontejnerja.
