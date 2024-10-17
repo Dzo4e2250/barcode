@@ -29,7 +29,7 @@ EAN Barcode Generator je namenjen uporabnikom, ki redno delajo s tabelami EAN ko
 1. Klonirajte repozitorij:
    ```bash
    git clone https://github.com/Dzo4e2250/barcode
-   cd barcode-main
+   cd barcode
 2. Zgradi Docker sliko:
    ```bash
    docker build -t ean-barcode-app .
