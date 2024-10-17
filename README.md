@@ -28,7 +28,7 @@ EAN Barcode Generator je namenjen uporabnikom, ki redno delajo s tabelami EAN ko
 
 1. Klonirajte repozitorij:
    ```bash
-   git clone https://github.com/yourusername/ean-barcode-generator.git
+   git clone https://github.com/Dzo4e2250/barcode
    cd ean-barcode-generator
 2. Zgradi Docker sliko:
    ```bash
@@ -64,12 +64,23 @@ Aplikacija uporablja naslednje knjižnice:
 Vse potrebne knjižnice so navedene v datoteki **requirements.txt** in se avtomatično namestijo, ko Docker slika gradi aplikacijo.
 
 5. Pogosta vprašanja
-Zakaj se aplikacija ne zažene?
+
+##Zakaj se aplikacija ne zažene?
 Preverite, ali imate pravilno nameščen Docker in če sledite korakom za zagon slike in kontejnerja.
 
 6. PDF dokument ne prikazuje barkodov, kaj naj storim?
 Poskrbite, da so vse EAN kode pravilno vnešene kot 13-mestne številke. Če napaka še vedno vztraja, preverite loge Docker kontejnerja s tem ukazom:
-  ```bash
-  docker logs <container_id>
+   ```bash
+      docker logs <container_id>
+
+7. Kako ustavim aplikacijo?
+Poiščite ID kontejnerja z ukazom docker ps, nato pa ustavite kontejner z naslednjim ukazom:
+   ```bash
+   docker stop <container_id>
+8. Prispevanje
+Če želite prispevati k projektu, se obrnite na nas ali predložite pull request. Veselimo se vaših izboljšav in predlogov!
+
+
+
 
   
