@@ -65,7 +65,7 @@ Vse potrebne knjižnice so navedene v datoteki **requirements.txt** in se avtoma
 
 5. Pogosta vprašanja
 
-##Zakaj se aplikacija ne zažene?
+Zakaj se aplikacija ne zažene?
 Preverite, ali imate pravilno nameščen Docker in če sledite korakom za zagon slike in kontejnerja.
 
 6. PDF dokument ne prikazuje barkodov, kaj naj storim?
@@ -78,6 +78,7 @@ Poiščite ID kontejnerja z ukazom docker ps, nato pa ustavite kontejner z nasle
    ```bash
    docker stop <container_id>
 8. Prispevanje
+
 Če želite prispevati k projektu, se obrnite na nas ali predložite pull request. Veselimo se vaših izboljšav in predlogov!
 
 
